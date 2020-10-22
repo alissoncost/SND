@@ -1,0 +1,6 @@
+
+name: "#vinter-loginForm-nome"
+cpf_cnpj: "#vinter-loginForm-cpfCnpj"
+email: "#vinter-loginForm-email"
+phone_number: "#vinter-loginForm-telefone"
+entrar_chat: "#vinter-btnSend"
