@@ -17,6 +17,14 @@ require 'png_quantizator'
    Capybara.register_driver :chrome do |app|
      Capybara::Selenium::Driver.new(app, browser: :chrome)
    end
+  elsif ENV['chrome_headless']
+    Capybara.default_driver = :chrome
+    Capybara.register_driver :chrome do |app|
+      options = Selenium::WebDriver::Chrome::Options.new(args:
+        %w[headless disable-gpu incognito no-sandbox])
+      Capybara::Selenium::Driver.new(app, browser: :chrome,
+                                          options: options)
+    end
  elsif ENV['firefox']
    Capybara.default_driver = :firefox
    Capybara.register_driver :firefox do |app|

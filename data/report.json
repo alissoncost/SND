@@ -1,0 +1,119 @@
+[
+  {
+    "uri": "features/fixtures/chatsnd.feature",
+    "id": "acesso-ao-chat-da-snd",
+    "keyword": "Funcionalidade",
+    "name": "Acesso ao chat da SND",
+    "description": "",
+    "line": 2,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Acesso a URL",
+        "description": "",
+        "line": 4,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22066
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8955
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 555968196
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu acesso a 'URL'",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/common.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3589575215
+            }
+          }
+        ]
+      },
+      {
+        "id": "acesso-ao-chat-da-snd;acesso-com-os-dados-validos",
+        "keyword": "Cenario",
+        "name": "Acesso com os dados validos",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "preencho de forma valida os campos",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/common.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2324908526
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "Clico em avançar",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/common.rb:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79723371
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "vejo o chat logado",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/common.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3138391649
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.33.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48725604
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

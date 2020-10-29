@@ -1,2 +1,7 @@
 default: --no-source --color --format pretty
 trilha: -p default chrome=true QA=true
+jenkins: QA=true -p format-default -p report-json chrome_headless=true
+
+format-default: --no-source --color --format pretty
+report-html:    --format html --out=data/report/report.html
+report-json:    --format json --out=data/report.json

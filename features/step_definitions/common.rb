@@ -19,6 +19,6 @@ Dado('que eu acesso a {string}') do |url|
   end
 
   Então("vejo o chat logado") do
-    page.assert_selector("#vinter-btnSendMessage", wait: 4)
+    page.assert_selector("#vinter-btnSendMessage", wait: 10)
   end
   
